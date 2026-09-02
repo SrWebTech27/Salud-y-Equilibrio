@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
   <!-- Etiqueta de verificación de Google Search Console -->
   <meta name="google-site-verification" content="Sd02cP1vtiUidYh1JI9-oiZEDEYk69W3bq64P7VsGak" />
   
   <meta name="description" content="Salud y Equilibrio: fisioterapia personalizada en Miraflores, Lima. Atención en consultorio y a domicilio.">
-  <title>Salud y Equilibrio | Fisioterapia en Miraflores</title>
-  
+  <title>Salud y Equilibrio</title>
+    <link rel="icon" href="logo.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -53,10 +52,18 @@
     .services { background:var(--mist); }.services-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:65px; align-items:start; }.services-list { display:grid; grid-template-columns:1fr 1fr; gap:12px; }.service { padding:17px 16px; border-radius:10px; background:#fff; color:var(--deep); font-weight:600; font-size:.94rem; border:1px solid transparent; }.service:hover { border-color:#9ccac6; }.service::before { content:"✦"; color:var(--teal); margin-right:9px; }
     .highlight { margin-top:31px; background:var(--deep); color:white; padding:27px; border-radius:15px; }.highlight h3 { font-family:"Playfair Display",serif; font-size:1.4rem; margin-bottom:9px; }.highlight p { font-size:.93rem; color:#cce4e0; }
     .experience { background:white; }.experience-grid { display:grid; grid-template-columns:1fr 1fr; gap:65px; align-items:center; }.media { position:relative; }.media img { display:block; width:84%; aspect-ratio:4/3; object-fit:cover; border-radius:12px; }.media .mini { position:absolute; width:42%; right:0; bottom:-28px; border:7px solid white; border-radius:10px; box-shadow:0 10px 25px rgba(0,0,0,.12); }.credentials { margin-top:28px; display:grid; grid-template-columns:1fr 1fr; gap:12px; }.credential { padding:12px 0; border-bottom:1px solid var(--line); font-size:.9rem; font-weight:600; color:#3d5a5a; }.credential::before { content:"✓"; color:var(--teal); font-weight:700; margin-right:8px; }
+    .reviews { background:linear-gradient(180deg,#fbfaf8 0%,#eef7f6 100%); }
+    .reviews-grid { margin-top:38px; display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+    .review { background:#fff; border:1px solid var(--line); border-radius:16px; padding:26px 22px; box-shadow:0 10px 25px rgba(17,54,54,.04); }
+    .stars { color:#f2b94b; letter-spacing:2px; font-size:1.1rem; margin-bottom:14px; }
+    .review p { font-size:1rem; color:#405b5b; }
+    .reviewer { margin-top:24px; display:flex; flex-direction:column; gap:3px; }
+    .reviewer strong { color:var(--deep); font-size:.96rem; }
+    .reviewer span { font-size:.8rem; color:#5a7676; }
     .contact { background:var(--deep); color:white; }.contact h2 { color:white; }.contact-grid { display:grid; grid-template-columns:.8fr 1.2fr; gap:80px; align-items:start; }.contact .section-lead { color:#c2dddd; }.contact-details { margin-top:28px; display:grid; gap:16px; }.detail { display:flex; align-items:flex-start; gap:12px; }.detail b { color:#a9d8d2; min-width:22px; }.form { background:white; padding:29px; border-radius:15px; color:var(--ink); display:grid; gap:14px; }.form label { font-size:.8rem; font-weight:700; color:#456060; }.form input,.form textarea { width:100%; margin-top:5px; border:1px solid #d5e3e1; border-radius:8px; padding:12px; font:inherit; color:var(--ink); }.form textarea { min-height:96px; resize:vertical; }.form .button { width:100%; }
     footer { background:#103f40; color:#b8d4d1; padding:25px 0; font-size:.86rem; } footer .container { display:flex; justify-content:space-between; gap:20px; align-items:center; }.social { display:flex; gap:14px; }.social a:hover { color:white; }
     .whatsapp { position:fixed; z-index:30; right:18px; bottom:18px; width:96px; height:96px; display:grid; place-items:center; background:transparent; animation:mascot-float 2.8s ease-in-out infinite; }.whatsapp img { width:100%; height:100%; object-fit:contain; mix-blend-mode:screen; filter:drop-shadow(0 7px 8px rgba(9,58,58,.28)); transition:transform .2s ease; }.whatsapp:hover img { transform:scale(1.12) rotate(-7deg); } @keyframes mascot-float { 0%,100% { translate:0 0; } 50% { translate:0 -9px; } }
-    @media(max-width:800px){ .topbar .container { gap:11px; font-size:.76rem; }.navlinks { display:none; position:absolute; left:0; right:0; top:76px; background:white; padding:22px; flex-direction:column; align-items:stretch; box-shadow:0 12px 16px #00000010; }.navlinks.open { display:flex; }.menu { display:block; }.hero { padding:53px 0 62px; }.hero-grid,.services-grid,.experience-grid,.contact-grid { grid-template-columns:1fr; gap:38px; }.hero-art { min-height:370px; }.hero-art .place { height:350px; width:82%; }.features { grid-template-columns:1fr; }.services-list { grid-template-columns:1fr; }.experience-grid { gap:55px; }.contact { padding:75px 0; } }
+    @media(max-width:800px){ .topbar .container { gap:11px; font-size:.76rem; }.navlinks { display:none; position:absolute; left:0; right:0; top:76px; background:white; padding:22px; flex-direction:column; align-items:stretch; box-shadow:0 12px 16px #00000010; }.navlinks.open { display:flex; }.menu { display:block; }.hero { padding:53px 0 62px; }.hero-grid,.services-grid,.experience-grid,.contact-grid,.reviews-grid { grid-template-columns:1fr; gap:38px; }.hero-art { min-height:370px; }.hero-art .place { height:350px; width:82%; }.features { grid-template-columns:1fr; }.services-list { grid-template-columns:1fr; }.experience-grid { gap:55px; }.reviews-grid { margin-top:28px; } .contact { padding:75px 0; } }
     @media(max-width:470px){ .topbar .container a:last-child { display:none; }.brand { font-size:1rem; }.hero h1 { font-size:3rem; }.hero-art { min-height:320px; }.hero-art .place { height:305px; }.badge { bottom:12px; padding:13px; width:70%; }.credentials { grid-template-columns:1fr; } footer .container { flex-direction:column; align-items:flex-start; } }
   </style>
 </head>
@@ -75,11 +82,12 @@
         <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Servicios</a>
         <a href="#especialidades">Especialidades</a>
+        <a href="#reseñas">Reseñas</a>
         <a class="button" href="#contacto">Reserva tu cita</a>
       </div>
     </nav>
   </header>
-
+  
   <main>
     <section class="hero" id="inicio">
       <div class="container hero-grid">
@@ -102,7 +110,6 @@
         </div>
       </div>
     </section>
-
     
     <section class="about" id="nosotros">
       <div class="container">
@@ -162,6 +169,75 @@
             <div class="credential">Alto rendimiento</div>
             <div class="credential">Plasma rico en plaquetas</div>
           </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="reviews" id="reseñas">
+      <div class="container">
+        <p class="eyebrow">Reseñas</p>
+        <h2>Lo que dicen nuestras pacientes</h2>
+        <div class="reviews-grid">
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Me encanto la atención, quedé satisfecho. Desiree es muy profesional y explica todo detalladamente. Sin duda la recomiendo.”</p>
+            <div class="reviewer"><strong>Ranger Espinoza</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Excelente fisioterapista. Muy profesional, explica todo con paciencia y se nota el avance desde la primera sesión. 100% recomendada.”</p>
+            <div class="reviewer"><strong>Joselin Guevara Roca</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Me encantó sus terapias físicas; me dio mucha confianza y seguridad en los ejercicios. Muy recomendable.”</p>
+            <div class="reviewer"><strong>Margot Limaco</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Las terapias son muy efectivas y acertadas. Sugiero tener paciencia, constancia y verán los resultados. ¡Muy recomendables!”</p>
+            <div class="reviewer"><strong>Luz S.</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Tu salud es el único lugar donde siempre tiene que vivir tu cuerpo. Excelente atención, me sirvió mucho.”</p>
+            <div class="reviewer"><strong>Dervis González</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Excelente atención, me ayudaron con las rodillas. Fui a otros lugares y no acertaban con lo que tenía. La licenciada me ayudó y me recuperé rápido.”</p>
+            <div class="reviewer"><strong>Jeeff Moreano Calderón</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Desirée es una excelente terapeuta. He tenido varias terapias sobre todo con mis piernas y pies, y ahora estoy bastante mejor gracias a su constante cuidado.”</p>
+            <div class="reviewer"><strong>Julia Vascones</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Lo máximo. Desiree entiende lo que necesito y brinda exactamente el servicio que se necesita para aliviar el dolor.”</p>
+            <div class="reviewer"><strong>Fressia Gonzales</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Recomiendo totalmente porque durante mis sesiones me he sentido bien satisfecha. La licenciada Desiree tiene mucha paciencia y atención.”</p>
+            <div class="reviewer"><strong>Daritza Dali Huiza</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“La atención de Desiré fue vital para la recuperación de mi papá. Súper dedicada, conoce su trabajo y la recomiendo mucho.”</p>
+            <div class="reviewer"><strong>Jessica Saavedra</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Excelente atención. Me ayudó mucho con las molestias que presentaba y resolvió todas mis dudas con amabilidad y paciencia.”</p>
+            <div class="reviewer"><strong>Leonel Arismendi</strong><span>Paciente</span></div>
+          </article>
+          <article class="review">
+            <div class="stars">★★★★★</div>
+            <p>“Muy buena atención y excelente servicio. Recomendadísima, muy profesional y con un trato cálido.”</p>
+            <div class="reviewer"><strong>Lisette Susana Sotomayor Reategui</strong><span>Paciente</span></div>
+          </article>
         </div>
       </div>
     </section>
